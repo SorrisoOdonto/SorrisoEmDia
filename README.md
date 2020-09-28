@@ -7,6 +7,7 @@ Novo protótipo navegacional da empresa Sorriso em Dia, o projeto conta com dive
 3. Otimizações de velocidade
 4. Migração para Java Service Pages
 5. Conexão com Banco de Dados
+6. Adaptação para as regras de negócio
 
 Valido ressaltar que este é um projeto universitário, a "empresa" Sorriso em Dia é totalmente fictícia, feita apenas para o desenvolvimento do sistema Odontológico que aqui será implementado.
 
