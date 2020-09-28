@@ -142,7 +142,7 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <div>
-        <nav class="navbar navbar-light navbar-expand-md navigation-clean fixed-top">
+        <nav class="navbar navbar-light navbar-expand-lg navigation-clean fixed-top">
             <div class="container"><a href="#conta-atual" class="scroll"><img id="logo" src="../assets/img/logo/logo.png" alt="Sorriso em Dia"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse"
                     id="navcol-1">
@@ -155,7 +155,6 @@
                     </div>
                     <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item" role="presentation"><a class="nav-link scroll" href="#agenda-scroll">Agenda</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link scroll" href="#mensagem-scroll">Enviar mensagem</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link scroll" href="#cadastrar-scroll">Cadastrar usuário</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link scroll" href="#lista-scroll">Lista de pacotes</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="../index.html" id="entrar">Sair</a></li>
@@ -228,52 +227,8 @@
             </div>
 
             <div id="agenda">
-                <div id="mensagem-scroll"></div>
+                <div id="cadastrar-scroll"></div>
 
-            </div>
-        </section>
-    </div>
-
-    <div class="container receber-conteudo">
-        <section class="enviar-mensagem-section">
-            <div class="titulo-section">
-                <h5>Enviar mensagem</h5>
-            </div>
-
-            <div class="enviar-mensagem">
-                <div class="aside">
-                    <ul class="lista-email">
-                        <li><a href=""><i class="fas fa-inbox"></i>Caixa de Entrada</a></li>
-                        <li><a href=""><i class="fas fa-star"></i>Favoritos</a></li>
-                        <li><a href=""><i class="fas fa-rocket"></i>Enviados</a></li>
-                        <li><a href=""><i class="fas fa-exclamation-circle"></i>Importantes</a></li>
-                    </ul>
-
-                    <ul class="lista-email lista-contatos">
-                        <li><a href="">Ana Paula Tejano</a></li>
-                        <li><a href="">Arthur Read Cole</a></li>
-                        <li><a href="">Felipe Junior Play</a></li>
-                        <li><a href="">Henrique Shark</a></li>
-                        <li><a href="">Vitor e Léo</a></li>
-                        <li><a href="">Weslley Morcego</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="mensagem">
-                <label for="email-para">Para:</label>
-                <input type="email" id="email-para" name="email-para" class="border rounded" placeholder="Digite aqui o e-mail destinatário.">
-
-                <label for="assunto-enviar">Assunto:</label>
-                <input type="text" id="assunto-enviar" name="assunto-enviar" class="border rounded" placeholder="Digite aqui o assunto do e-mail.">
-
-                <label for="email-para">Mensagem:</label>
-                <textarea name="mensagem-enviar" id="mensagem-enviar" cols="70" rows="7" class="border rounded" placeholder="Digite a mensagem a ser enviada aqui."></textarea>
-
-                <div class="cent">
-                    <button class="botao-principal enviar-mensagem-btn" id="cadastrar-scroll">Enviar</button>
-                    <button class="botao-limpar apagar-mensagem-btn">Apagar</button>
-                </div>
             </div>
         </section>
     </div>
@@ -347,6 +302,29 @@
                     </label>
                     <input type="password" name="confirmarSenha" id="confirmarSenha" maxlength="30" class="border rounded" placeholder="Digite sua senha novamente" required autocomplete="off"/>
                   </div>
+                </div>
+
+                <div class="top-row">
+                  <div class="field-wrap">
+                    <label>
+                      Endereço:<span class="req">*</span>
+                    </label>
+                    <input type="text" id="endereco" name="endereco" maxlength="50" class="border rounded" placeholder="Digite seu endereço aqui" required autocomplete="off" />
+                  </div>
+              
+                  <div class="field-wrap">
+                    <label>
+                      Número:<span class="req">*</span>
+                    </label>
+                    <input type="text" name="numero-rua" id="numero-rua" maxlength="4" class="border rounded" placeholder="Digite seu número aqui" required autocomplete="off" />
+                  </div>
+                </div>
+    
+                <div class="field-wrap">
+                  <label>
+                    CEP:<span class="req">*</span>
+                  </label>
+                  <input type="text" name="cep" id="cep" maxlength="8" class="border rounded" placeholder="Digite seu CEP aqui" required autocomplete="off" />
                 </div>
                 
                 <div class="field-wrap">
@@ -467,22 +445,22 @@
                         <h3>Navegação</h3>
                         <ul>
                             <li><a href="" class="scroll">Home</a></li>
-                            <li><a href="" class="scroll">Agendamento</a></li>
+                            <li><a href="#agenda-scroll" class="scroll">Agendamento</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-6 col-md-3 item">
                         
                         <ul>
-                            <li><a href="" class="scroll">Consultas</a></li>
-                            <li><a href="" class="scroll">Produtos</a></li>
+                            <li><a href="#cadastrar-scroll" class="scroll">Cadastrar</a></li>
+                            <li><a href="#lista-scroll" class="scroll">Lista</a></li>
                         </ul>
                     </div>
                     <div class="col-md-6 item text">
-                        <h3>Sorriso em Dia</h3>
-                        <p>A loja é aberta às 08:00h e fechada às 20:00h<br></p>
-                        <p>Rua Bernardo Magalhães, 137 - Tatuapé, São Paulo - SP<br></p>
-                        <p>Trabalhe conosco. Tel: 27418392<br></p>
-                    </div>
+                      <h3>Sorriso em Dia</h3>
+                      <p>Estamos abertos das 08h às 20h, de segunda a sexta.<br></p>
+                      <p>Rua Bernardo Magalhães, 137 - Tatuapé, São Paulo - SP<br></p>
+                      <p>Telefone para contato: (11) 2741-8392 ou clique no balão do WhatsApp<br></p>
+                  </div>
                 </div>
                 <p class="copyright">Sorriso em Dia © 2020, Todos os direitos reservados</p>
             </div>
